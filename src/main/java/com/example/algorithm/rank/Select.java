@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * 选择排序
+ * 每次父循环 选出最小的数放在首位 共执行 arr.length-1 次
  */
 public class Select {
 
