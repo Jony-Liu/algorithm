@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * 插入排序
- * 每次父循环，将j = i +1 插入到合适的位置，将下标 0~i+1 的数进行排序
+ * 每次父循环，将 j=i+1 插入到合适的位置，将下标 0~i+1 的数进行排序
  */
 public class insertSort {
 
