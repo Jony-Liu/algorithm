@@ -17,17 +17,7 @@ import java.util.Set;
 
 public class ReflectionUtil {
 
-    @Test
-    public void test() {
-        Student person = new Student("Tom","一年级",6);
-        Student student = new Student();
-        Set properties = new HashSet();
-        copyProperties(person, student, properties, false);
-        System.out.println(person);
-        System.out.println(student);
-    }
-
-    private static void copyProperties(Object source, Object target, Set properties, boolean included) {
+    static void copyProperties(Object source, Object target, Set properties, boolean included) {
         try {
             BeanInfo sourceInfo = Introspector.getBeanInfo(source.getClass());
 
