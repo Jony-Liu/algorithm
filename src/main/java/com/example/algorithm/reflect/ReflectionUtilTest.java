@@ -5,10 +5,10 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-public class UtilTest {
+public class ReflectionUtilTest {
     @Test
     public void test() {
-        Student person = new Student("Tom","一年级",6);
+        Student person = new Student("Tom", "一年级", 6);
         Student student = new Student();
         Set properties = new HashSet();
         ReflectionUtil.copyProperties(person, student, properties, false);
