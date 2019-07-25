@@ -43,11 +43,12 @@ public class Person extends Creature<String> implements Comparable, MyInterface 
         return "Person [name=" + name + ", age=" + age + "]";
     }
 
-    @MyAnnoation("atlzq")
+    @MyAnnoation(val = 23,str = "hello")
     public void show(){
         System.out.println("Show [name=" + name + ", age=" + age + "]");
     }
 
+    @MyAnnoation(val = 25)
     public void display(String nation){
         System.out.println("My address is"+nation);
     }

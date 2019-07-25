@@ -9,9 +9,14 @@ public class AnnotationTest {
 
     @Test
     public void test01() throws Exception {
-        Method method = Person.class.getMethod("show");
-        MyAnnoation myAnnoation = method.getAnnotation(MyAnnoation.class);
-        System.out.println(myAnnoation.value());//print atlzq
+        Method showMethod = Person.class.getMethod("show");
+        MyAnnoation myAnnoation = showMethod.getAnnotation(MyAnnoation.class);
+        System.out.println("val:"+myAnnoation.val()+"----str:"+myAnnoation.str());
+
+        Method displayMethod = Person.class.getMethod("display",String.class);
+        myAnnoation = displayMethod.getAnnotation(MyAnnoation.class);
+        System.out.println("val:"+myAnnoation.val()+"----str:"+myAnnoation.str());
+
     }
 
     @Test
