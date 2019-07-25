@@ -11,5 +11,7 @@ import static java.lang.annotation.ElementType.METHOD;
 @Inherited
 @Target(METHOD)
 public @interface MyTiger {
+
     String value() default "默认值";
+
 }
