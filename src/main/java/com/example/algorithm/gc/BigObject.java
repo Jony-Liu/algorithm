@@ -11,10 +11,6 @@ public class BigObject {
         }
     }
 
-    public BigObject(byte[] bytes) {
-        this.bytes = bytes;
-    }
-
     public String toString(){
         return String.valueOf(bytes.length);
     }
