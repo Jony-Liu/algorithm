@@ -52,7 +52,6 @@ public class Book implements Comparable {
 	public int compareTo(Object o) {
 		// TODO Auto-generated method stub
 		if(o instanceof Book){
-
 			Book  obook = (Book)o;
 			if(this.rent<obook.rent){
 				return -1;
@@ -61,7 +60,6 @@ public class Book implements Comparable {
 			}else{
 				return 0;
 			}
-
 		}else{
 			throw new RuntimeException("类型不匹配");
 		}
