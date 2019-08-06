@@ -16,6 +16,21 @@ public class Person {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Person){
+            Person person = (Person)obj;
+            if(this.age==person.age&&this.name.equals(person.name)){
+                return true;
+            }else {
+                return false;
+            }
+        }else {
+            return false;
+        }
+
+    }
+
+    @Override
     public String toString() {
         return "name:" + name + "  age:" + age;
     }
