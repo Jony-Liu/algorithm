@@ -7,7 +7,7 @@ public class SingletonTest {
         Singleton single1 = Singleton.getSingle();
         Singleton single2 = Singleton.getSingle();
         if(single1==single2){
-            System.out.println("相同");
+            System.out.println("same");
         }
     }
 
