@@ -1,4 +1,4 @@
-package com.example.algorithm.lock;
+package com.example.algorithm.lock.demo01;
 
 
 public class DepositThread extends Thread {
