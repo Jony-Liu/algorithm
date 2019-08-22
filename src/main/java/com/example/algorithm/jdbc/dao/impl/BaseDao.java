@@ -55,7 +55,6 @@ public class BaseDao {
      * 执行增删改
      * insert into student values(?,?,?,?)
      * Object[] data={30000,"李四",23,"99@qq.com"};
-     *
      * @param sql
      * @param data
      * @return
@@ -119,7 +118,6 @@ public class BaseDao {
                 e.printStackTrace();
             }
         }
-
     }
 
 

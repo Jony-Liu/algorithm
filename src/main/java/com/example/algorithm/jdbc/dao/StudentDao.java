@@ -2,10 +2,16 @@
 
 import com.example.algorithm.jdbc.entity.Student;
 
+/**
+ * @author Jony-Liu
+ */
 public interface StudentDao {
 
-    //public boolean updateStudent(Student stu);
-
-    public Student getStudent(int studentno);
+    /**
+     * get student information
+     * @param studentNo
+     * @return
+     */
+    Student getStudent(int studentNo);
 
 }
