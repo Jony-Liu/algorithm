@@ -16,7 +16,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * dao 持久层
+ * dao
  * @author Jony-Liu
  */
 public class StudentDaoImpl implements StudentDao {
@@ -117,7 +117,6 @@ public class StudentDaoImpl implements StudentDao {
             sb.append(studentno);
             sb.append(",'");
             sb.append(loginpwd).append("','").append(studentname).append("','").append(sex).append("',").append(gradeid).append(",'").append(phone).append("','").append(address).append("','").append(sdf.format(bornDate)).append("','").append(email).append("',").append(identityCard).append(")");
-            //System.out.println(sql);
             //返回值是几行收到影响
             int num = st.executeUpdate(sb.toString());
             System.out.println(num);
@@ -152,12 +151,16 @@ public class StudentDaoImpl implements StudentDao {
         }
         return false;
     }
-    //update student set studentname=++ ,sex=++ where studentno=++
-    //delete from student where studentno=?
-    //获取所有的学生  select * from student
+
+
+    /**
+     * update student set studentname=++ ,sex=++ where studentno=++
+     * delete from student where studentno=?
+     * 获取所有的学生  select * from student
+     * @return
+     */
     public List<Student>  getAllStudents(){
         List<Student>list = new ArrayList<Student>();
-
         //加载驱动
         Connection con = null;
         Statement st = null;
@@ -335,7 +338,6 @@ public class StudentDaoImpl implements StudentDao {
                 e.printStackTrace();
             }
         }
-
 
         return flag;
     }
