@@ -1,4 +1,4 @@
-﻿package com.example.algorithm.jdbc.dao;
+package com.example.algorithm.jdbc.dao;
 
 import com.example.algorithm.jdbc.entity.Student;
 
@@ -9,9 +9,9 @@ public interface StudentDao {
 
     /**
      * get student information
-     * @param studentNo
+     * @param studentno
      * @return
      */
-    Student getStudent(int studentNo);
+    Student getStudent(int studentno);
 
 }
