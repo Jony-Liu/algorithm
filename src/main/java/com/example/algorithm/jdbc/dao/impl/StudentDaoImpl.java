@@ -4,29 +4,27 @@ package com.example.algorithm.jdbc.dao.impl;
 import com.example.algorithm.jdbc.dao.StudentDao;
 import com.example.algorithm.jdbc.entity.Student;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
 /**
  * dao
+ *
  * @author Jony-Liu
  */
-public class StudentDaoImpl  extends  BaseDao implements StudentDao {
+public class StudentDaoImpl extends BaseDao implements StudentDao {
 
     /**
      * 获取学生的方法
+     *
      * @param stuNo
      * @return
      */
     @Override
-    public Student getStudent(int stuNo){
+    public Student getStudent(int stuNo) {
         Student student = null;
         //加载驱动
         try {
@@ -39,21 +37,19 @@ public class StudentDaoImpl  extends  BaseDao implements StudentDao {
         ResultSet rs = null;
         try {
             //建立连接
-            //?useUnicode=true&characterEncoding=utf8  jdbc和数据库交互数据的编码自己设置，设置成utf8
-            con = DriverManager.getConnection("jdbc:mysql://10.83.85.178:3306/myschool?useUnicode=true&characterEncoding=utf8", "root", "123456");
+            con = super.getConnection();
             //执行sql语句
             st = con.createStatement();
             //得到结果集
-            String sql = "select * from student where studentno="+stuNo;
+            String sql = "select * from student where studentno=" + stuNo;
             //executeQuery执行查询语句，executeUpdate执行增删改
             rs = st.executeQuery(sql);
             //rs.next()获取某一行数据
-            if(rs.next()){
+            if (rs.next()) {
                 //获取每个字段的值
                 int studentno = rs.getInt("studentno");
                 String loginpwd = rs.getString("loginpwd");
                 String studentname = rs.getString("studentname");
-                //Date bornDate = rs.getDate("bornDate");//获取年月日
                 //获取年月日时分秒
                 Date bornDate = rs.getTimestamp("bornDate");
                 student = new Student();
@@ -64,52 +60,42 @@ public class StudentDaoImpl  extends  BaseDao implements StudentDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally{
+        } finally {
             //关闭
             try {
-                if(rs!=null){
+                if (rs != null) {
                     rs.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             try {
-                if(st!=null){
+                if (st != null) {
                     st.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             try {
-                if(con!=null){
+                if (con != null) {
                     con.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
         return student;
     }
 
-    public boolean addStudent(int studentno,String loginpwd,String studentname,String sex,int gradeid,String phone,String address,Date bornDate,String email,String identityCard){
+    public boolean addStudent(int studentno, String loginpwd, String studentname, String sex, int gradeid, String phone, String address, Date bornDate, String email, String identityCard) {
         Connection con = null;
         Statement st = null;
         try {
             //加载驱动
             Class.forName("com.mysql.jdbc.Driver");
-            //建立连接
-            String url="jdbc:mysql://127.0.0.1:3306/myschool";
-            String user = "root";
-            String password = "123456";
-            con = DriverManager.getConnection(url, user, password);
-
+            con = super.getConnection();
             //获取statement,以及执行sql语句
             st = con.createStatement();
-			/*String name = "张三";
-			System.out.println("你的名字是name");*/
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
             //String sql = "INSERT INTO student VALUES("+studentno+",'"+loginpwd+"','"+studentname+"','"+sex+"',"+gradeid+",'"+phone+"','"+address+"','"+sdf.format(bornDate)+"','"+email+"',"+identityCard+")";
             StringBuffer sb = new StringBuffer("INSERT INTO student VALUES(");
@@ -119,109 +105,96 @@ public class StudentDaoImpl  extends  BaseDao implements StudentDao {
             //返回值是几行收到影响
             int num = st.executeUpdate(sb.toString());
             System.out.println(num);
-            if(num>0){
+            if (num > 0) {
                 System.out.println("增加成功");
                 return true;
-            }else{
+            } else {
                 System.out.println("增加失败");
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally{
+        } finally {
             //关闭
             try {
-                if(st!=null){
+                if (st != null) {
                     st.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             try {
-                if(con!=null){
+                if (con != null) {
                     con.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
         return false;
     }
 
-
     /**
-     * update student set studentname=++ ,sex=++ where studentno=++
-     * delete from student where studentno=?
-     * 获取所有的学生  select * from student
+     * 获取所有的学生
+     *
      * @return
      */
-    public List<Student>  getAllStudents(){
-        List<Student>list = new ArrayList<Student>();
+    public List<Student> getAllStudents() {
+        List<Student> list = new ArrayList<Student>();
         //加载驱动
         Connection con = null;
         Statement st = null;
         ResultSet rs = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String url="jdbc:mysql://127.0.0.1:3306/myschool";
-            String user = "root";
-            String password = "123456";
-            con = DriverManager.getConnection(url, user, password);
+            con = super.getConnection();
             st = con.createStatement();
             rs = st.executeQuery("select * from student");
-            while(rs.next()){
-                int studentno = rs.getInt("studentno");
-                String loginpwd = rs.getString("loginpwd");
-                String studentname = rs.getString("studentname");
+            while (rs.next()) {
+                int studentNo = rs.getInt("studentno");
+                String loginPwd = rs.getString("loginpwd");
+                String studentName = rs.getString("studentname");
                 //获取年月日时分秒
                 Date bornDate = rs.getTimestamp("bornDate");
                 Student s = new Student();
-                s.setStudentno(studentno);
-                s.setLoginpwd(loginpwd);
-                s.setStudentname(studentname);
+                s.setStudentno(studentNo);
+                s.setLoginpwd(loginPwd);
+                s.setStudentname(studentName);
                 s.setBornDate(bornDate);
                 list.add(s);
             }
         } catch (ClassNotFoundException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
-        }finally{
-            //关闭
+        } finally {
             try {
-                if(rs!=null){
+                if (rs != null) {
                     rs.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             try {
-                if(st!=null){
+                if (st != null) {
                     st.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             try {
-                if(con!=null){
+                if (con != null) {
                     con.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
         return list;
     }
 
-    public boolean login(String studentname,String loginpwd){
+    public boolean login(String studentname, String loginpwd) {
         boolean flag = false;
         //加载驱动
         try {
@@ -234,8 +207,7 @@ public class StudentDaoImpl  extends  BaseDao implements StudentDao {
         ResultSet rs = null;
         try {
             //建立连接
-            //?useUnicode=true&characterEncoding=utf8  jdbc和数据库交互数据的编码自己设置，设置成utf8
-            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/myschool?useUnicode=true&characterEncoding=utf8", "root", "123456");
+            con = super.getConnection();
             //执行sql语句
             st = con.createStatement();
             //得到结果集
@@ -244,35 +216,32 @@ public class StudentDaoImpl  extends  BaseDao implements StudentDao {
             System.out.println(sql);
             //executeQuery执行查询语句，executeUpdate执行增删改
             rs = st.executeQuery(sql.toString());
-            if(rs.next()){
+            if (rs.next()) {
                 flag = true;
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally{
+        } finally {
             //关闭
             try {
-                if(rs!=null){
+                if (rs != null) {
                     rs.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             try {
-                if(st!=null){
+                if (st != null) {
                     st.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             try {
-                if(con!=null){
+                if (con != null) {
                     con.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -281,59 +250,56 @@ public class StudentDaoImpl  extends  BaseDao implements StudentDao {
 
     /**
      * prepareStatement  既安全，效率又高
-     * @param studentname
-     * @param loginpwd
+     *
+     * @param studentName
+     * @param loginPwd
      * @return
      */
-    public boolean loginPre(String studentname,String loginpwd){
+    public boolean loginPre(String studentName, String loginPwd) {
         boolean flag = false;
         Connection con = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/myschool?useUnicode=true&characterEncoding=utf8", "root", "123456");
+            con = super.getConnection();
             //? 占位符
             String sql = "select * from student where studentname=? and loginpwd = ?";
             //预编译
             ps = con.prepareStatement(sql);
             //第一个参数是第几个问号，从1开始；第二个参数是代替问号的数据
-            ps.setString(1, studentname);
-            ps.setString(2, loginpwd);
+            ps.setString(1, studentName);
+            ps.setString(2, loginPwd);
             //不要写sql语句
             rs = ps.executeQuery();
-            if(rs.next()){
+            if (rs.next()) {
                 flag = true;
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
-        }finally{
+        } finally {
             //关闭
             try {
-                if(rs!=null){
+                if (rs != null) {
                     rs.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             try {
-                if(ps!=null){
+                if (ps != null) {
                     ps.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             try {
-                if(con!=null){
+                if (con != null) {
                     con.close();
                 }
             } catch (SQLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -342,17 +308,19 @@ public class StudentDaoImpl  extends  BaseDao implements StudentDao {
     }
 
     public static void main(String[] args) {
+        //get student by id
         StudentDaoImpl studentDaoImpl = new StudentDaoImpl();
         Student stu = studentDaoImpl.getStudent(1);
         System.out.println(stu.getStudentname());
-//        //int studentno,String loginpwd,String studentname,String sex,int gradeid,String phone,String address,Date bornDate,String email,String identityCard
-//        studentDaoImpl.addStudent(20016,"123","名字","男",2,"111111","合肥",new Date(),"11@qq.com",null);
-//		/*List<Student> list = studentDaoImpl.getAllStudents();
-//		for(Student s:list){
-//			System.out.println(s);
-//		}*/
-//        boolean flag = studentDaoImpl.loginPre("郭靖2222", "' or '1'='1");
-//        System.out.println(flag);
+        //add data
+        studentDaoImpl.addStudent(20016, "123", "周杰伦", "男", 2, "18012345678", "台湾", new Date(), "Jay@163.com", null);
+        //get all students
+        List<Student> list = studentDaoImpl.getAllStudents();
+        for (Student s : list) {
+            System.out.println(s);
+        }
+        boolean flag = studentDaoImpl.loginPre("周杰伦", "123");
+        System.out.println(flag);
     }
 }
 
