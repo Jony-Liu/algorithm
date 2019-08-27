@@ -21,7 +21,7 @@ public class BaseDao {
 
     public static void init() {
         Properties properties = new Properties();
-        String file = "database.properties";
+        String file = "com/example/algorithm/jdbc/database.properties";
         //从类的根目录中读取文件
         InputStream is = BaseDao.class.getClassLoader().getResourceAsStream(file);
         try {

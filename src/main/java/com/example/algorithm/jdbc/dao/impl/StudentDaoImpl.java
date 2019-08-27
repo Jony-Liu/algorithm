@@ -14,12 +14,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
 /**
  * dao
  * @author Jony-Liu
  */
-public class StudentDaoImpl implements StudentDao {
+public class StudentDaoImpl  extends  BaseDao implements StudentDao {
 
     /**
      * 获取学生的方法
@@ -41,7 +40,7 @@ public class StudentDaoImpl implements StudentDao {
         try {
             //建立连接
             //?useUnicode=true&characterEncoding=utf8  jdbc和数据库交互数据的编码自己设置，设置成utf8
-            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/myschool?useUnicode=true&characterEncoding=utf8", "root", "123456");
+            con = DriverManager.getConnection("jdbc:mysql://10.83.85.178:3306/myschool?useUnicode=true&characterEncoding=utf8", "root", "123456");
             //执行sql语句
             st = con.createStatement();
             //得到结果集
@@ -344,16 +343,16 @@ public class StudentDaoImpl implements StudentDao {
 
     public static void main(String[] args) {
         StudentDaoImpl studentDaoImpl = new StudentDaoImpl();
-        //Student stu = studentDaoImpl.getStudent(20000);
-        //System.out.println(stu.getStudentname());
-        //int studentno,String loginpwd,String studentname,String sex,int gradeid,String phone,String address,Date bornDate,String email,String identityCard
-        //studentDaoImpl.addStudent(20016,"123","名字","男",2,"111111","合肥",new Date(),"11@qq.com",null);
-		/*List<Student> list = studentDaoImpl.getAllStudents();
-		for(Student s:list){
-			System.out.println(s);
-		}*/
-        boolean flag = studentDaoImpl.loginPre("郭靖2222", "' or '1'='1");
-        System.out.println(flag);
+        Student stu = studentDaoImpl.getStudent(1);
+        System.out.println(stu.getStudentname());
+//        //int studentno,String loginpwd,String studentname,String sex,int gradeid,String phone,String address,Date bornDate,String email,String identityCard
+//        studentDaoImpl.addStudent(20016,"123","名字","男",2,"111111","合肥",new Date(),"11@qq.com",null);
+//		/*List<Student> list = studentDaoImpl.getAllStudents();
+//		for(Student s:list){
+//			System.out.println(s);
+//		}*/
+//        boolean flag = studentDaoImpl.loginPre("郭靖2222", "' or '1'='1");
+//        System.out.println(flag);
     }
 }
 
