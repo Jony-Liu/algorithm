@@ -1,6 +1,8 @@
 package com.example.algorithm.lock.demo01;
 
-
+/**
+ * @author Jony-Liu
+ */
 public class DramThread extends Thread {
 
     Account account;
@@ -16,7 +18,6 @@ public class DramThread extends Thread {
         for(int i =0;i<100;i++){
             account.draw(money);
         }
-        // TODO Auto-generated method stub
     }
 
 }

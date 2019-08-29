@@ -2,23 +2,28 @@ package com.example.algorithm.lock.demo02;
 
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * @author Jony-Liu
+ */
 public class Account {
-    // 定义锁对象
+    /**
+     * 定义锁对象
+     */
     private final ReentrantLock lock = new ReentrantLock();
-    // 封装账户编号、账户余额的两个成员变量
+    /**
+     * 封装账户编号、账户余额的两个成员变量
+     */
     private String accountNo;
     private double balance;
 
     public Account() {
     }
 
-    // 构造器
     public Account(String accountNo, double balance) {
         this.accountNo = accountNo;
         this.balance = balance;
     }
 
-    // accountNo的setter和getter方法
     public void setAccountNo(String accountNo) {
         this.accountNo = accountNo;
     }
@@ -27,12 +32,14 @@ public class Account {
         return this.accountNo;
     }
 
-    // 因此账户余额不允许随便修改，所以只为balance提供getter方法，
     public double getBalance() {
         return this.balance;
     }
 
-    // 提供一个线程安全draw()方法来完成取钱操作
+    /**
+     * 提供一个线程安全draw()方法来完成取钱操作
+     * @param drawAmount
+     */
     public void draw(double drawAmount) {
         // 加锁
         lock.lock();
@@ -60,14 +67,16 @@ public class Account {
         }
     }
 
-    // 下面两个方法根据accountNo来重写hashCode()和equals()方法
+    @Override
     public int hashCode() {
         return accountNo.hashCode();
     }
 
+    @Override
     public boolean equals(Object obj) {
-        if (this == obj)
+        if (this == obj) {
             return true;
+        }
         if (obj != null
                 && obj.getClass() == Account.class) {
             Account target = (Account) obj;
