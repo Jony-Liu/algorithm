@@ -1,6 +1,8 @@
 package com.example.algorithm.designmode.prototype;
 
-
+/**
+ * @author Jony-Liu
+ */
 public class Prototype implements Cloneable {
     private String name;
 
@@ -12,11 +14,11 @@ public class Prototype implements Cloneable {
         this.name = name;
     }
 
+    @Override
     public Object clone() {
         try {
             return super.clone();
         } catch (CloneNotSupportedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
             return null;
         }

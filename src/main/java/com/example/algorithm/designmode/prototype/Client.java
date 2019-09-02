@@ -1,5 +1,8 @@
 package com.example.algorithm.designmode.prototype;
 
+/**
+ * @author Jony-Liu
+ */
 public class Client {
     public static void main(String[] args) {
         Prototype pro1 = new ConcretePrototype("prototype");
