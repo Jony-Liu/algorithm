@@ -1,5 +1,8 @@
 package com.example.algorithm.thread;
 
+/**
+ * @author Jony-Liu
+ */
 public class RunnableTest {
     public static void main(String[] args) {
         /*MyThread t1 = new MyThread();
