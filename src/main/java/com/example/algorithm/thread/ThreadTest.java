@@ -1,5 +1,8 @@
 package com.example.algorithm.thread;
 
+/**
+ * @author Jony-Liu
+ */
 public class ThreadTest {
     public static void main(String[] args) {
         // TODO Auto-generated method stub

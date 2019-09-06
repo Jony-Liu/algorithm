@@ -1,15 +1,17 @@
 package com.example.algorithm.thread;
 
-
-class joinDemo implements Runnable{
+/**
+ * @author Jony-Liu
+ */
+class JoinDemo implements Runnable{
 
     private Thread thread;
 
-    public joinDemo() {
+    public JoinDemo() {
         // TODO Auto-generated constructor stub
     }
 
-    public joinDemo(Thread thread){
+    public JoinDemo(Thread thread){
         this.thread = thread;
     }
 
@@ -31,14 +33,17 @@ class joinDemo implements Runnable{
 
 }
 
+/**
+ * @author Jony-Liu
+ */
 public class ThreadTest2 {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        joinDemo j1= new joinDemo();
+        JoinDemo j1= new JoinDemo();
         Thread t1 = new Thread(j1,"thread1");
         t1.start();
-        joinDemo j2 = new joinDemo(t1);
+        JoinDemo j2 = new JoinDemo(t1);
         Thread t2 = new Thread(j2,"thread2");
         t2.start();
     }

@@ -1,5 +1,8 @@
 package com.example.algorithm.thread;
 
+/**
+ * @author Jony-Liu
+ */
 public class ThreadTest1 {
     public static void main(String[] args) throws InterruptedException {
         MyThread m1 = new MyThread("thread");

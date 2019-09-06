@@ -1,5 +1,8 @@
 package com.example.algorithm.thread;
 
+/**
+ * @author Jony-Liu
+ */
 public class MyThread2 implements Runnable {
 
     @Override
