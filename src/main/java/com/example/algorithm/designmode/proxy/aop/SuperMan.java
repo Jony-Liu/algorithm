@@ -1,5 +1,8 @@
 package com.example.algorithm.designmode.proxy.aop;
 
+/**
+ * @author Jony-Liu
+ */
 public class SuperMan implements Human {
 
     @Override

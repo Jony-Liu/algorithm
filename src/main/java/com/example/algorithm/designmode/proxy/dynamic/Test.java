@@ -4,6 +4,9 @@ import com.example.algorithm.designmode.proxy.AdidasFactory;
 import com.example.algorithm.designmode.proxy.Factory;
 import com.example.algorithm.designmode.proxy.NikeFactory;
 
+/**
+ * @author Jony-Liu
+ */
 public class Test {
 
     public static void main(String[] args) {
