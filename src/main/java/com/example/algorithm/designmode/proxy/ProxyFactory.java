@@ -1,5 +1,8 @@
 package com.example.algorithm.designmode.proxy;
 
+/**
+ * @author Jony-Liu
+ */
 public class ProxyFactory implements Factory {
     
     private Factory ft;

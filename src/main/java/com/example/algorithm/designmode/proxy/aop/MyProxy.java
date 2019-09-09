@@ -2,7 +2,10 @@ package com.example.algorithm.designmode.proxy.aop;
 
 import java.lang.reflect.Proxy;
 
-public class Myproxy {
+/**
+ * @author Jony-Liu
+ */
+public class MyProxy {
 
     public Object getProxyInstance(Object obj) {
         MyInvocationHandler handler = new MyInvocationHandler();

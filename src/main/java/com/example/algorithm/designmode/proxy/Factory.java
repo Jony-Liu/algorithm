@@ -1,6 +1,12 @@
 package com.example.algorithm.designmode.proxy;
 
+/**
+ * @author Jony-Liu
+ */
 public interface Factory {
-    public void clothProduct();
+    /**
+     * product cloth
+     */
+    void clothProduct();
 }
 
