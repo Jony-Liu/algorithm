@@ -1,7 +1,10 @@
 package com.example.algorithm.designmode.factory;
 
+/**
+ * @author Jony-Liu
+ */
 public class HumanFactory {
-    public Human creatHuman(Class race){
+    public Human createHuman(Class race){
         Human human= null;
         try {
             human = (Human)Class.forName(race.getName()).newInstance();
