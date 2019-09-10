@@ -1,8 +1,22 @@
 package com.example.algorithm.designmode.abstractfactory;
 
+/**
+ * @author Jony-Liu
+ */
 public interface Human {
-    public  void laugh();
-    public void cry();
-    public void talk();
+    /**
+     * laugh
+     */
+    void laugh();
+
+    /**
+     * cry
+     */
+    void cry();
+
+    /**
+     * talk
+     */
+    void talk();
 }
 

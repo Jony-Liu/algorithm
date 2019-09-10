@@ -1,6 +1,8 @@
 package com.example.algorithm.designmode.abstractfactory;
 
-
+/**
+ * @author Jony-Liu
+ */
 public class MaleHumanFactory extends AbstractHumanFactory {
 
     @Override

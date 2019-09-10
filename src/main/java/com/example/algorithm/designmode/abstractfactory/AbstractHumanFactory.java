@@ -1,5 +1,8 @@
 package com.example.algorithm.designmode.abstractfactory;
 
+/**
+ * @author Jony-Liu
+ */
 public abstract class AbstractHumanFactory implements HumanFactory {
     public Human createHuman(Class c) throws ClassNotFoundException{
         Human human =null;
