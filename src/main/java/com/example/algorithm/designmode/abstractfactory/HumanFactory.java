@@ -1,7 +1,27 @@
 package com.example.algorithm.designmode.abstractfactory;
 
+/**
+ * @author Jony-Liu
+ */
 public interface HumanFactory {
-    public Human createYellowHuman();
-    public Human createWhiteHuman();
-    public Human createBlackHuman();
+    /**
+     * createYellowHuman
+     *
+     * @return
+     */
+    Human createYellowHuman();
+
+    /**
+     * createWhiteHuman
+     *
+     * @return
+     */
+    Human createWhiteHuman();
+
+    /**
+     * createBlackHuman
+     *
+     * @return
+     */
+    Human createBlackHuman();
 }

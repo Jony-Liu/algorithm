@@ -1,4 +1,8 @@
 package com.example.algorithm.designmode.abstractfactory;
+
+/**
+ * @author Jony-Liu
+ */
 public abstract class AbstractWhiteHuman implements Human {
 
     @Override

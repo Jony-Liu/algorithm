@@ -1,5 +1,8 @@
 package com.example.algorithm.designmode.factory;
 
+/**
+ * @author Jony-Liu
+ */
 public class BlackHuman implements Human {
 
     @Override
