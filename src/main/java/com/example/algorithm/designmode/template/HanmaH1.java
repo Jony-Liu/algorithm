@@ -1,6 +1,8 @@
 package com.example.algorithm.designmode.template;
 
-
+/**
+ * @author Jony-Liu
+ */
 public class HanmaH1 extends HanmaModel {
 
     @Override
