@@ -1,7 +1,9 @@
 package com.example.algorithm.designmode.decorative;
 
-
-public class FouthGradeSchoolReport extends SchoolReport {
+/**
+ * @author Jony-Liu
+ */
+public class GradeSchoolReport extends SchoolReport {
 
     @Override
     public void report() {

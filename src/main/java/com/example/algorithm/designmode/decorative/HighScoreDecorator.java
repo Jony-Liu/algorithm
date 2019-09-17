@@ -1,6 +1,8 @@
 package com.example.algorithm.designmode.decorative;
 
-
+/**
+ * @author Jony-Liu
+ */
 public class HighScoreDecorator extends Decorator {
 
     public HighScoreDecorator(SchoolReport sr) {

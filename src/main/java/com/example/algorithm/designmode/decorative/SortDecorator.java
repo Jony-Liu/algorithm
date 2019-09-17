@@ -1,5 +1,8 @@
 package com.example.algorithm.designmode.decorative;
 
+/**
+ * @author Jony-Liu
+ */
 public class SortDecorator extends Decorator {
 
     public SortDecorator(SchoolReport sr) {
