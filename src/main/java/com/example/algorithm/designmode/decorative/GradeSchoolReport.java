@@ -3,7 +3,7 @@ package com.example.algorithm.designmode.decorative;
 /**
  * @author Jony-Liu
  */
-public class FouthGradeSchoolReport extends SchoolReport {
+public class GradeSchoolReport extends SchoolReport {
 
     @Override
     public void report() {
