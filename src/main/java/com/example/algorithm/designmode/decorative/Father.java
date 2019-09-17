@@ -1,6 +1,8 @@
 package com.example.algorithm.designmode.decorative;
 
-
+/**
+ * @author Jony-Liu
+ */
 public class Father {
 
     public static void main(String[] args) {

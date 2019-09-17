@@ -1,5 +1,8 @@
 package com.example.algorithm.designmode.decorative;
 
+/**
+ * @author Jony-Liu
+ */
 public abstract class Decorator extends SchoolReport {
     private SchoolReport sr;
     public Decorator(SchoolReport sr) {
