@@ -13,6 +13,14 @@ import java.util.*;
 public class DemoTest {
 
     @Test
+    public void test26(){
+        List<String> list = new ArrayList<>();
+        list.add("he");
+        list.add("she");
+        System.out.println(list.get(2));
+    }
+
+    @Test
     public void test21(){
         System.out.println(Math.round(-2.5));
         System.out.println(Math.round(2.5));
