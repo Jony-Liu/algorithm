@@ -1,6 +1,8 @@
 package com.example.algorithm.designmode.builder;
 
-
+/**
+ * @author Jony-Liu
+ */
 public interface PersonBuilder {
 
     void buildHead();
