@@ -6,9 +6,12 @@ import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.*;
 
+/**
+ * @author Jony-Liu
+ */
 @Target(value = {CONSTRUCTOR, FIELD, LOCAL_VARIABLE, METHOD, PACKAGE, PARAMETER, TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface MyAnnoation {
+public @interface MyAnnotation {
 
     String str() default "默认值";
 
