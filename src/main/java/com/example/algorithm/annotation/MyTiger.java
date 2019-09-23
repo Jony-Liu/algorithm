@@ -7,6 +7,9 @@ import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.METHOD;
 
+/**
+ * @author Jony-Liu
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
 @Target(METHOD)
