@@ -3,12 +3,16 @@ package com.example.algorithm.collection;
 
 import java.util.LinkedList;
 
+/**
+ * @author Jony-Liu
+ */
 public class LinkedListDemo {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         LinkedList lk = new LinkedList();
-        lk.add("a");//在链表尾部添加元素
+        //在链表尾部添加元素
+        lk.add("a");
         lk.add("a");
         lk.add(10);
         lk.addFirst("b");//在首位添加元素

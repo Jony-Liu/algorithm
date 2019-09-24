@@ -3,6 +3,9 @@ package com.example.algorithm.collection;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+ * @author Jony-Liu
+ */
 public class ArrayListDemo4 {
     public static void main(String[] args) {
         ArrayList arr = new ArrayList();
