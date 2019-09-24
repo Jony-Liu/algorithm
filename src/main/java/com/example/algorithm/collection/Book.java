@@ -1,6 +1,8 @@
 package com.example.algorithm.collection;
 
-
+/**
+ * @author Jony-Liu
+ */
 public class Book implements Comparable {
     private String state;
     private String name;

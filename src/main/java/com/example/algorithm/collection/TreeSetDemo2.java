@@ -4,6 +4,10 @@ package com.example.algorithm.collection;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.TreeSet;
+
+/**
+ * @author Jony-Liu
+ */
 class MyComparator implements Comparator {
 
     @Override
@@ -25,6 +29,10 @@ class MyComparator implements Comparator {
     }
 
 }
+
+/**
+ * @author Jony-Liu
+ */
 public class TreeSetDemo2 {
 
     public static void main(String[] args) {

@@ -1,6 +1,10 @@
 package com.example.algorithm.collection;
 import java.util.Iterator;
 import java.util.Vector;
+
+/**
+ * @author Jony-Liu
+ */
 public class VectorDemo {
 
     public static void main(String[] args) {
