@@ -141,17 +141,20 @@ public class DemoTest {
     public void test13() {
         String a = "abcd";
         String b = "abcd";
-        System.out.println(a == b); // True
-        System.out.println(a.equals(b)); // True
+        // True
+        System.out.println(a == b);
+        // True
+        System.out.println(a.equals(b));
         String c = new String("abcd");
         String d = new String("abcd");
-        System.out.println(c == d); // False
-        System.out.println(c.equals(d)); // True
-
-
+        // False
+        System.out.println(c == d);
+        // True
+        System.out.println(c.equals(d));
         String e = new String("abcd").intern();
         String f = new String("abcd").intern();
-        System.out.println(e == f); // Now true
+        // Now true
+        System.out.println(e == f);
         System.out.println(e.equals(f));
     }
 
