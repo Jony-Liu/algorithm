@@ -21,6 +21,33 @@ public class DemoTest {
     }
 
     @Test
+    public void test25(){
+        System.out.println(Math.round(-11.6));
+    }
+
+    @Test
+    public void test24(){
+        Integer integer = Integer.MAX_VALUE;
+        System.out.println(integer);
+        System.out.println(integer+1);
+    }
+
+    @Test
+    public void test23() {
+        String[] strings = {"hello","world","kitty"};
+        List<String> list = new ArrayList(Arrays.asList(strings));
+        list.add("bb");
+        System.out.println(list.toString());
+    }
+
+    @Test
+    public void test22(){
+        int i = 223;
+        int ii = 223;
+        System.out.println(i == ii);
+    }
+
+    @Test
     public void test21(){
         System.out.println(Math.round(-2.5));
         System.out.println(Math.round(2.5));
@@ -56,7 +83,6 @@ public class DemoTest {
             if (integer == 2) {
                 list.remove(integer);
             }
-
         }
     }
 
@@ -67,7 +93,6 @@ public class DemoTest {
             System.out.println("hello");
             System.out.println("world");
         }
-
     }
 
     @Test
@@ -185,7 +210,6 @@ public class DemoTest {
         System.out.println(str.substring(5));
         do {
 
-
         } while (true);
     }
 
@@ -222,7 +246,8 @@ public class DemoTest {
         System.out.println(map.toString());
         System.out.println("-----------");
         Map<String, String> map1 = new Hashtable<>();
-        map1.put("kitty", null);//NullPointerException
+        //NullPointerException
+        map1.put("kitty", null);
         System.out.println(map1);
     }
 
@@ -255,10 +280,9 @@ public class DemoTest {
         System.out.println(list);
         Set<Integer> set = new HashSet(list);
         System.out.println(set);
-
-        Object[] objs = list.toArray();
-        Arrays.sort(objs);
-        for (Object obj : objs) {
+        Object[] objects = list.toArray();
+        Arrays.sort(objects);
+        for (Object obj : objects) {
             System.out.println(obj);
         }
     }
