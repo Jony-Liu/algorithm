@@ -13,6 +13,12 @@ import java.util.*;
 public class DemoTest {
 
     @Test
+    public void test29(){
+        Outer.Inner inner = new Outer.Inner();
+        inner.test();
+    }
+
+    @Test
     public void test28(){
         int[][] arr={{1,2,3},{4,5,6,7},{9}};
         boolean found = false;
