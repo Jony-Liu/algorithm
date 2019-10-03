@@ -13,6 +13,25 @@ import java.util.*;
 public class DemoTest {
 
     @Test
+    public void test31(){
+        Vector vector = new Vector();
+        HashSet set = new HashSet(vector);
+    }
+
+    @Test
+    public void test30(){
+        Vector vector = new Vector();
+        Vector newVector = new Vector();
+        for (int i=0;i<vector.size();i++)
+        {
+            Object obj = vector.get(i);
+            if(!newVector.contains(obj)){
+                newVector.add(obj);
+            }
+        }
+    }
+
+    @Test
     public void test29(){
         Outer.Inner inner = new Outer.Inner();
         inner.test();
