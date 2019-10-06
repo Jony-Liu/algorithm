@@ -13,39 +13,49 @@ import java.util.*;
 public class DemoTest {
 
     @Test
-    public void test31(){
+    public void test32() {
+        String s1 = "a";
+        String s2 = s1 + "b";
+        String s3 = "a" + "b";
+        System.out.println(s2 == "ab");
+        System.out.println(s3 == "ab");
+        String s ="a" + "b" +"c" + "d";
+        System.out.println(s== "abcd");
+    }
+
+    @Test
+    public void test31() {
         Vector vector = new Vector();
         HashSet set = new HashSet(vector);
     }
 
     @Test
-    public void test30(){
+    public void test30() {
         Vector vector = new Vector();
         Vector newVector = new Vector();
-        for (int i=0;i<vector.size();i++)
-        {
+        for (int i = 0; i < vector.size(); i++) {
             Object obj = vector.get(i);
-            if(!newVector.contains(obj)){
+            if (!newVector.contains(obj)) {
                 newVector.add(obj);
             }
         }
     }
 
     @Test
-    public void test29(){
+    public void test29() {
         Outer.Inner inner = new Outer.Inner();
         inner.test();
     }
 
     @Test
-    public void test28(){
-        int[][] arr={{1,2,3},{4,5,6,7},{9}};
+    public void test28() {
+        int[][] arr = {{1, 2, 3}, {4, 5, 6, 7}, {9}};
         boolean found = false;
-        for(int i=0;i<arr.length&&!found;i++)       {
-            for(int j=0;j<arr[i].length;j++){
+        for (int i = 0; i < arr.length && !found; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
                 System.out.println("i=" + i + ",j=" + j);
-                if(arr[i][j] ==5) {
-                    found =true;
+                if (arr[i][j] == 5) {
+                    found = true;
                     break;
                 }
             }
@@ -53,12 +63,12 @@ public class DemoTest {
     }
 
     @Test
-    public void test27(){
+    public void test27() {
         ok:
-        for(int i=0;i<10;i++){
-            for(int j=0;j<10;j++){
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
                 System.out.println("i=" + i + ",j=" + j);
-                if(j == 5){
+                if (j == 5) {
                     break ok;
                 }
             }
@@ -67,7 +77,7 @@ public class DemoTest {
 
 
     @Test
-    public void test26(){
+    public void test26() {
         List<String> list = new ArrayList<>();
         list.add("he");
         list.add("she");
@@ -75,34 +85,34 @@ public class DemoTest {
     }
 
     @Test
-    public void test25(){
+    public void test25() {
         System.out.println(Math.round(-11.6));
     }
 
     @Test
-    public void test24(){
+    public void test24() {
         Integer integer = Integer.MAX_VALUE;
         System.out.println(integer);
-        System.out.println(integer+1);
+        System.out.println(integer + 1);
     }
 
     @Test
     public void test23() {
-        String[] strings = {"hello","world","kitty"};
+        String[] strings = {"hello", "world", "kitty"};
         List<String> list = new ArrayList(Arrays.asList(strings));
         list.add("bb");
         System.out.println(list.toString());
     }
 
     @Test
-    public void test22(){
+    public void test22() {
         int i = 223;
         int ii = 223;
         System.out.println(i == ii);
     }
 
     @Test
-    public void test21(){
+    public void test21() {
         System.out.println(Math.round(-2.5));
         System.out.println(Math.round(2.5));
         System.out.println(Math.round(-2.6));
@@ -121,7 +131,7 @@ public class DemoTest {
         char[] chars = "hello".toCharArray();
         Set<Character> set = new HashSet();
         for (char c : chars) {
-            if(!set.add(c)){
+            if (!set.add(c)) {
                 System.out.println(c);
             }
         }
