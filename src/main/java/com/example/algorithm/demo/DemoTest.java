@@ -13,14 +13,28 @@ import java.util.*;
 public class DemoTest {
 
     @Test
+    public void test34(){
+        System.out.println(test33());;
+    }
+
+    public int test33() {
+        int x = 1;
+        try {
+            return x;
+        } finally {
+            ++x;
+        }
+    }
+
+    @Test
     public void test32() {
         String s1 = "a";
         String s2 = s1 + "b";
         String s3 = "a" + "b";
         System.out.println(s2 == "ab");
         System.out.println(s3 == "ab");
-        String s ="a" + "b" +"c" + "d";
-        System.out.println(s== "abcd");
+        String s = "a" + "b" + "c" + "d";
+        System.out.println(s == "abcd");
     }
 
     @Test
