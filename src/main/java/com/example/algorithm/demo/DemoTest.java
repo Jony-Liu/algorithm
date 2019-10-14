@@ -12,6 +12,21 @@ import java.util.*;
  */
 public class DemoTest {
 
+    /**
+     * 输入30位数uuid
+     */
+    @Test
+    public void test35(){
+        UUID uuid = UUID.randomUUID();
+        String[] strings = uuid.toString().split("-");
+        String sum = "";
+        for (String s:strings
+             ) {
+            sum = sum + s;
+        }
+        System.out.println(sum.substring(0,30));
+    }
+
     @Test
     public void test34(){
         System.out.println(test33());;
