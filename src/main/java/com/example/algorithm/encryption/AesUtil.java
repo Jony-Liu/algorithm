@@ -47,7 +47,7 @@ public class AesUtil {
 
     /**
      * @param content 加密密文
-     * @param key     加密密码
+     * @param key 加密密码
      * @return Base64
      */
     public static String deCode(String content, String key) {
@@ -60,13 +60,13 @@ public class AesUtil {
             return null;
         }
         try {
-            byte[] raw = key.getBytes();  //获得密码的字节数组
-            SecretKeySpec skey = new SecretKeySpec(raw, "AES"); //根据密码生成AES密钥
-            Cipher cipher = Cipher.getInstance(ALGORITHM);  //根据指定算法ALGORITHM自成密码器
-            cipher.init(Cipher.DECRYPT_MODE, skey); //初始化密码器，第一个参数为加密(ENCRYPT_MODE)或者解密(DECRYPT_MODE)操作，第二个参数为生成的AES密钥
-            byte[] encode_content = Base64.decodeBase64(content); //把密文字符串转回密文字节数组
-            byte[] byte_content = cipher.doFinal(encode_content); //密码器解密数据
-            return new String(byte_content, "utf-8"); //将解密后的数据转换为字符串返回
+            byte[] raw = key.getBytes();
+            SecretKeySpec skey = new SecretKeySpec(raw, "AES");
+            Cipher cipher = Cipher.getInstance(ALGORITHM);
+            cipher.init(Cipher.DECRYPT_MODE, skey);
+            byte[] encode_content = Base64.decodeBase64(content);
+            byte[] byte_content = cipher.doFinal(encode_content);
+            return new String(byte_content, "utf-8");
         } catch (Exception e) {
             e.printStackTrace();
             return null;
