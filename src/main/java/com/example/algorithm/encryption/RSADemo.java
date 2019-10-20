@@ -32,10 +32,10 @@ public class RSADemo {
     public static String decrypt(String cipherText, PrivateKey privateKey) throws Exception {
         byte[] bytes = Base64.getDecoder().decode(cipherText);
 
-        Cipher decriptCipher = Cipher.getInstance("RSA");
-        decriptCipher.init(Cipher.DECRYPT_MODE, privateKey);
+        Cipher cipher = Cipher.getInstance("RSA");
+        cipher.init(Cipher.DECRYPT_MODE, privateKey);
 
-        return new String(decriptCipher.doFinal(bytes), UTF_8);
+        return new String(cipher.doFinal(bytes), UTF_8);
     }
 
     public static String sign(String plainText, PrivateKey privateKey) throws Exception {
