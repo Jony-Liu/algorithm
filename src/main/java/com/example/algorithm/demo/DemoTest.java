@@ -12,24 +12,51 @@ import java.util.*;
  */
 public class DemoTest {
 
+    @Test
+    public void test38() {
+        final StringBuffer a = new StringBuffer("immutable");
+        //a = new StringBuffer("");
+        a.append(" broken!");
+        System.out.println(a);
+    }
+
+    @Test
+    public void test37() {
+        char c = '汉';
+        //char c1 = '汉字'; //can't compile
+        //unicode编码和char都占两个字节
+        System.out.println(c);
+    }
+
+    @Test
+    public void test36() {
+        short s1 = 1;
+        s1 = (short) (s1 + 1);
+        System.out.println(s1);
+        short s2 = 1;
+        s2 += 1;
+        System.out.println(s2);
+    }
+
     /**
      * 输入30位数uuid
      */
     @Test
-    public void test35(){
+    public void test35() {
         UUID uuid = UUID.randomUUID();
         String[] strings = uuid.toString().split("-");
         String sum = "";
-        for (String s:strings
-             ) {
+        for (String s : strings
+                ) {
             sum = sum + s;
         }
-        System.out.println(sum.substring(0,30));
+        System.out.println(sum.substring(0, 30));
     }
 
     @Test
-    public void test34(){
-        System.out.println(test33());;
+    public void test34() {
+        System.out.println(test33());
+        ;
     }
 
     public int test33() {
