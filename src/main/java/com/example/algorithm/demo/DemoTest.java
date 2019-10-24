@@ -13,6 +13,24 @@ import java.util.*;
 public class DemoTest {
 
     @Test
+    public void test40(){
+        System.out.println(InterfaceDemo.name);
+    }
+
+    @Test
+    public void test39(){
+        System.out.println(Math.ceil(11.3));
+        System.out.println(Math.ceil(-11.3));
+        System.out.println(Math.floor(11.6));
+        System.out.println(Math.round(11.6));
+
+        double a = Math.round(-11.6);
+        double b = Math.floor(-11.6+0.5);
+        System.out.println(a);
+        System.out.println(a==b);
+    }
+
+    @Test
     public void test38() {
         final StringBuffer a = new StringBuffer("immutable");
         //a = new StringBuffer("");
