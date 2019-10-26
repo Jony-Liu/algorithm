@@ -15,13 +15,13 @@ public class FIleEncode {
         //文件后缀名 .java .xml .dtd .properties .js .css .jsp
         // {".java", ".xml", ".dtd", ".properties", ".js", ".css", ".jsp"};
         String[] suffixes = { ".java"};
-        for (String suffix : suffixes
-                ) {
+        for (String suffix : suffixes) {
             findFile(rootPath, suffix);
         }
     }
 
     /**
+     * 递归查询
      * @param path 根目录
      */
     public static void findFile(String path, String suffix) {
@@ -104,7 +104,6 @@ public class FIleEncode {
         File file1 = new File(newPath);
         file1.renameTo(new File(path));
     }
-
 
 }
 
