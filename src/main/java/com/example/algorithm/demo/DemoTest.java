@@ -13,6 +13,16 @@ import java.util.*;
 public class DemoTest {
 
     @Test
+    public void test41(){
+        // -128 ~ 127
+        byte b;
+        for (int i = -128;i<128;i++){
+            b = (byte)i;
+            System.out.println(b);
+        }
+    }
+
+    @Test
     public void test40(){
         System.out.println(InterfaceDemo.name);
     }
