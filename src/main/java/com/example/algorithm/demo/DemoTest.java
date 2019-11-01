@@ -12,6 +12,10 @@ import java.util.*;
  */
 public class DemoTest {
 
+    public void test42(){
+        Hashtable hashtable = new Hashtable();
+    }
+
     @Test
     public void test41(){
         // -128 ~ 127
