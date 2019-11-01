@@ -18,7 +18,7 @@ public class CreatFile {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
-        System.out.println("f.exists:"+f.exists());
+        System.out.println("f.exists:" + f.exists());
         //分隔符错误
 		/*File f1 = new File("file\1.txt");
 		try {
@@ -34,7 +34,7 @@ public class CreatFile {
         System.out.println(f.canWrite());
         System.out.println(f.isFile());
         System.out.println(f.isDirectory());
-        File f3= new File("D:\\c.txt");
+        File f3 = new File("D:\\c.txt");
         try {
             f3.createNewFile();
         } catch (IOException e) {
@@ -50,7 +50,7 @@ public class CreatFile {
         //f4.mkdir();//创建单级文件夹
         f4.mkdirs();//创建多级文件夹；
         System.out.println(f4.exists());
-        File f5 = new File(f4,"f5.txt");
+        File f5 = new File(f4, "f5.txt");
         try {
             f5.createNewFile();
         } catch (IOException e) {

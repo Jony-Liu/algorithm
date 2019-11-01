@@ -14,7 +14,7 @@ public class FIleEncode {
         //rootPath = "D:\\myworkspace\\eftcvt\\src\\main\\java\\com\\aegon_cnooc\\eftcvt\\bankManager";
         //文件后缀名 .java .xml .dtd .properties .js .css .jsp
         // {".java", ".xml", ".dtd", ".properties", ".js", ".css", ".jsp"};
-        String[] suffixes = { ".java"};
+        String[] suffixes = {".java"};
         for (String suffix : suffixes) {
             findFile(rootPath, suffix);
         }
@@ -22,6 +22,7 @@ public class FIleEncode {
 
     /**
      * 递归查询
+     *
      * @param path 根目录
      */
     public static void findFile(String path, String suffix) {
@@ -57,11 +58,11 @@ public class FIleEncode {
 
         FileReader i = new FileReader(path);
         System.out.println(i.getEncoding());
-        if(!"GBK".equals(i.getEncoding())){
+        if (!"GBK".equals(i.getEncoding())) {
             return;
         }
         BufferedReader bufferedReader = new BufferedReader(
-                new InputStreamReader(new FileInputStream(path),i.getEncoding()));
+                new InputStreamReader(new FileInputStream(path), i.getEncoding()));
         BufferedWriter bufferedWriter = new BufferedWriter(
                 new OutputStreamWriter(new FileOutputStream(newPath), "UTF-8"));
         String line;
@@ -73,13 +74,13 @@ public class FIleEncode {
             e.printStackTrace();
         } finally {
             try {
-                if(bufferedReader!=null){
+                if (bufferedReader != null) {
                     bufferedReader.close();
                 }
-                if(bufferedWriter!=null){
+                if (bufferedWriter != null) {
                     bufferedWriter.close();
                 }
-                if(i!=null){
+                if (i != null) {
                     i.close();
                 }
             } catch (IOException ie) {
@@ -96,9 +97,9 @@ public class FIleEncode {
      */
     public static void changeName(String path, String newPath) {
         File file = new File(path);
-        if(file.delete()){
+        if (file.delete()) {
             System.out.println("已刪除备份");
-        }else{
+        } else {
             System.err.println("删除失败");
         }
         File file1 = new File(newPath);

@@ -21,7 +21,7 @@ public class CopyTxt {
                 while ((f.read(b)) != -1) {
                     f1.write(b);
                 }
-                System.out.println("used time:"+(System.currentTimeMillis() - start));
+                System.out.println("used time:" + (System.currentTimeMillis() - start));
             } catch (IOException e) {
                 e.printStackTrace();
             } finally {
@@ -54,15 +54,15 @@ public class CopyTxt {
             BufferedInputStream in = new BufferedInputStream(f);
             try {
                 long start1 = System.currentTimeMillis();
-                int i ;
-                while((i =in.read())!=-1){
+                int i;
+                while ((i = in.read()) != -1) {
                     out.write(i);
                 }
                 byte[] bytes = new byte[1024];
-                while (in.read(bytes)!= -1) {
+                while (in.read(bytes) != -1) {
                     out.write(bytes);
                 }
-                System.out.println("used time:"+(System.currentTimeMillis() - start1));
+                System.out.println("used time:" + (System.currentTimeMillis() - start1));
             } catch (IOException e) {
                 e.printStackTrace();
             } finally {
