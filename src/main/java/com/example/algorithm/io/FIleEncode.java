@@ -2,6 +2,8 @@ package com.example.algorithm.io;
 
 import java.io.*;
 
+import org.apache.commons.io.IOUtils;
+
 /**
  * @author Jony-Liu
  * @date 2019/10/25 21:08
@@ -56,13 +58,13 @@ public class FIleEncode {
     public static void changeEncode(String path) throws Exception {
         String newPath = path + ".bak";
 
-        FileReader i = new FileReader(path);
-        System.out.println(i.getEncoding());
-        if (!"GBK".equals(i.getEncoding())) {
+//        FileReader i = new FileReader(path);
+//        System.out.println(i.getEncoding());
+        if (!"GBK".equals(codeString(new File(path)))) {
             return;
         }
         BufferedReader bufferedReader = new BufferedReader(
-                new InputStreamReader(new FileInputStream(path), i.getEncoding()));
+                new InputStreamReader(new FileInputStream(path), "GBK"));
         BufferedWriter bufferedWriter = new BufferedWriter(
                 new OutputStreamWriter(new FileOutputStream(newPath), "UTF-8"));
         String line;
@@ -80,9 +82,9 @@ public class FIleEncode {
                 if (bufferedWriter != null) {
                     bufferedWriter.close();
                 }
-                if (i != null) {
-                    i.close();
-                }
+//                if (i != null) {
+//                    i.close();
+//                }
             } catch (IOException ie) {
                 ie.printStackTrace();
             }
@@ -104,6 +106,35 @@ public class FIleEncode {
         }
         File file1 = new File(newPath);
         file1.renameTo(new File(path));
+    }
+
+    /**
+     *
+     * @param fileName
+     * @return
+     * @throws Exception
+     */
+    public static String codeString(File fileName) throws Exception{
+        BufferedInputStream bin = new BufferedInputStream(
+                new FileInputStream(fileName));
+        int p = (bin.read() << 8) + bin.read();
+        String code = null;
+
+        switch (p) {
+            case 0xefbb:
+                code = "UTF-8";
+                break;
+            case 0xfffe:
+                code = "Unicode";
+                break;
+            case 0xfeff:
+                code = "UTF-16BE";
+                break;
+            default:
+                code = "GBK";
+        }
+        IOUtils.closeQuietly(bin);
+        return code;
     }
 
 }
