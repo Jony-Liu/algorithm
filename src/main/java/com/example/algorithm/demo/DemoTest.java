@@ -1,5 +1,6 @@
 package com.example.algorithm.demo;
 
+import com.example.algorithm.collection.LRUHashMap;
 import com.example.algorithm.reflect.Person;
 import org.junit.Test;
 
@@ -11,6 +12,29 @@ import java.util.*;
  * @author Jony-Liu
  */
 public class DemoTest {
+    @Test
+    public void test45() {
+        Map<String, String> map = new LRUHashMap<>(5);
+        for (int i = 0; i < 10; i++) {
+            map.put("" + i, "" + i);
+        }
+        System.out.println(map.size());
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    public void test44() {
+        //use java 1.5
+        List<String> rawList = new ArrayList();
+    }
+
+    @Test
+    public void test43() {
+        List<Object> objectList;
+        List<String> stringList = new ArrayList<String>();
+        //compilation error incompatible types
+        //objectList = stringList;
+    }
 
     public void test42(){
         Hashtable hashtable = new Hashtable();
