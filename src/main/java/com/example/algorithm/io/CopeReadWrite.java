@@ -2,6 +2,9 @@ package com.example.algorithm.io;
 
 import java.io.*;
 
+/**
+ * @author Jony-Liu
+ */
 public class CopeReadWrite {
 
     public static void main(String[] args) {

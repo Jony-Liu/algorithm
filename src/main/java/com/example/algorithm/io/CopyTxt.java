@@ -4,6 +4,9 @@ import org.junit.Test;
 
 import java.io.*;
 
+/**
+ * @author Jony-Liu
+ */
 public class CopyTxt {
 
     /**

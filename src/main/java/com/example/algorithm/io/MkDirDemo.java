@@ -2,7 +2,10 @@ package com.example.algorithm.io;
 
 import java.io.File;
 
-public class MkdirDemo {
+/**
+ * @author Jony-Liu
+ */
+public class MkDirDemo {
 
     public static void deleteFile(File file) {
         File[] files = file.listFiles();
