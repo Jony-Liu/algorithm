@@ -5,6 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+/**
+ * @author Jony-Liu
+ */
 public class FileOutputScreamDemo {
 
     public static void main(String[] args) {
