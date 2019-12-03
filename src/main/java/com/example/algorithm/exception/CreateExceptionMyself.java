@@ -14,7 +14,7 @@ class MyExcept extends Exception {
     }
 }
 
-public class CreatExceptionMyself {
+public class CreateExceptionMyself {
     public static void regist(int num) throws MyExcept {
         if (num < 0) {
             throw new MyExcept("注册失败！", 3);
