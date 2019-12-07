@@ -6,6 +6,7 @@ import java.util.Comparator;
 
 /**
  * 方法引用与构造器引用
+ * @author Jony-Liu
  */
 public class Test3 {
 

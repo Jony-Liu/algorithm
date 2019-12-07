@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 
 /**
  * lambda表达式的一些常见用法
+ * @author Jony-Liu
  */
 public class Test4 {
 
