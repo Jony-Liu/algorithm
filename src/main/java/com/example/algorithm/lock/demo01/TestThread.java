@@ -1,5 +1,8 @@
 package com.example.algorithm.lock.demo01;
 
+/**
+ * @author Jony-Liu
+ */
 public class TestThread {
 
     static Account account = new Account("123", 0);

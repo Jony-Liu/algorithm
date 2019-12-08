@@ -3,6 +3,7 @@ package com.example.algorithm.rank;
 import java.util.Arrays;
 
 /**
+ * @author Jony-Liu
  * 插入排序
  * 每次父循环，将 j=i+1 插入到合适的位置，将下标 0~i+1 的数进行排序
  */

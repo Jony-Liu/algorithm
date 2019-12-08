@@ -1,6 +1,7 @@
 package com.example.algorithm.rank;
 
 /**
+ * @author Jony-Liu
  * 快速排序
  */
 public class QuitSort {
