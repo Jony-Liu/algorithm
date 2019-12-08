@@ -2,6 +2,9 @@ package com.example.algorithm.query;
 
 import java.util.Scanner;
 
+/**
+ * @author Jony-Liu
+ */
 public class BinarySearch {
 
     public static void main(String[] args) {
