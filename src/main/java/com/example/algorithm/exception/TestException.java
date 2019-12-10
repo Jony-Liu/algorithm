@@ -1,4 +1,8 @@
 package com.example.algorithm.exception;
+
+/**
+ * @author Jony-Liu
+ */
 public class TestException {
     public  int add(){
         int a=1;
