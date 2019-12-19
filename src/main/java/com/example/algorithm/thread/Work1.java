@@ -1,5 +1,8 @@
 package com.example.algorithm.thread;
 
+/**
+ * @author Jony-Liu
+ */
 class MyThreadWork1 extends Thread{
 
     public MyThreadWork1(String name){
