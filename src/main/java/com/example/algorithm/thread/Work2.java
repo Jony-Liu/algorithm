@@ -2,6 +2,9 @@ package com.example.algorithm.thread;
 
 import java.util.Random;
 
+/**
+ * @author Jony-Liu
+ */
 class SubThread extends Thread{
 
     public SubThread(String name) {
