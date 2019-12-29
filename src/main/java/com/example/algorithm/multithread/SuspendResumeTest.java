@@ -5,6 +5,7 @@ package com.example.algorithm.multithread;
  * @date 2019/12/28 22:19
  */
 public class SuspendResumeTest {
+    @Deprecated
     public static void main(String[] args) {
         try {
             SuspendResumeDemo thread = new SuspendResumeDemo();
