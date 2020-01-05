@@ -1,4 +1,4 @@
-package com.example.algorithm.multithread;
+package com.example.algorithm.multithread.chapter01;
 
 /**
  * @author Jony-Liu
