@@ -1,7 +1,6 @@
 package com.example.algorithm.encryption;
 
 import org.apache.commons.codec.binary.Base64;
-import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import javax.crypto.Cipher;
@@ -13,8 +12,6 @@ import javax.crypto.spec.SecretKeySpec;
  */
 public class AesUtil {
 
-    private static final Logger logger = Logger.getLogger(AesUtil.class);
-
     private static final String ALGORITHM = "AES/ECB/PKCS5Padding";
 
     /**
@@ -24,11 +21,12 @@ public class AesUtil {
      */
     public static String enCode(String content, String key) {
         if (key == null || "".equals(key)) {
-            logger.info("key为空！");
+            System.out.println("key为空！");
             return null;
+
         }
         if (key.length() != 16) {
-            logger.info("key长度不是16位！");
+            System.out.println("key长度不是16位！");
             return null;
         }
         try {
@@ -52,11 +50,11 @@ public class AesUtil {
      */
     public static String deCode(String content, String key) {
         if (key == null || "".equals(key)) {
-            logger.info("key为空！");
+            System.out.println("key为空！");
             return null;
         }
         if (key.length() != 16) {
-            logger.info("key长度不是16位！");
+            System.out.println("key长度不是16位！");
             return null;
         }
         try {
@@ -76,12 +74,12 @@ public class AesUtil {
     @Test
     public void test() {
         String content = "加密解密测试";
-        logger.info("加密content：" + content);
+        System.out.println("加密content：" + content);
         String key = "abcd1234abcd1234";
-        logger.info("加密key：" + key);
+        System.out.println("加密key：" + key);
         String enResult = enCode(content, key);
-        logger.info("加密result：" + enResult);
+        System.out.println("加密result：" + enResult);
         String deResult = deCode(enResult, key);
-        logger.info("解密result：" + deResult);
+        System.out.println("解密result：" + deResult);
     }
 }
