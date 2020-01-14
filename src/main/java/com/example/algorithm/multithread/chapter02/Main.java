@@ -1,5 +1,10 @@
 package com.example.algorithm.multithread.chapter02;
 
+
+/**
+ * @author Jony-Liu
+ * @date 2020/1/5 16:18
+ */
 public class Main {
     public int i = 10;
     synchronized public void operateIMainMethod(){
