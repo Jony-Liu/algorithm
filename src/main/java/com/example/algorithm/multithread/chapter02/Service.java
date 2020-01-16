@@ -1,5 +1,9 @@
 package com.example.algorithm.multithread.chapter02;
 
+/**
+ * @author Jony-Liu
+ * @date 2020/1/5 16:24
+ */
 public class Service {
     /**
      * synchronized 锁重入：在使用 synchronized 时，当一个线程得到一个线程锁后，再次请求此对象时
