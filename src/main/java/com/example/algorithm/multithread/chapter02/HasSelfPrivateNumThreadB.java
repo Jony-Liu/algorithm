@@ -1,7 +1,5 @@
 package com.example.algorithm.multithread.chapter02;
 
-import com.example.algorithm.multithread.chapter01.YieldTest;
-
 /**
  * @author Jony-Liu
  * @date 2020/1/5 16:08
