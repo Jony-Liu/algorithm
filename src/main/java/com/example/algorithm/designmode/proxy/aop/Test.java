@@ -1,7 +1,9 @@
 package com.example.algorithm.designmode.proxy.aop;
 
+/**
+ * @author Jony-Liu
+ */
 public class Test {
-
     public static void main(String[] args) {
         SuperMan superMan = new SuperMan();
         Human human = (Human)(new MyProxy().getProxyInstance(superMan));
