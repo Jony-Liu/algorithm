@@ -1,5 +1,7 @@
 package com.example.algorithm.gc;
-
+/**
+ * @author Jony-Liu
+ */
 public class BigObject {
 
     private byte[] bytes;
