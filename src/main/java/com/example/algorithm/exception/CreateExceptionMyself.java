@@ -1,5 +1,9 @@
 package com.example.algorithm.exception;
 
+/**
+ * @author Jony-Liu
+ * @date 2019/10/16 21:55
+ */
 class MyExcept extends Exception {
     static final long serialVersionUID = 1L;
     private int idnumber;
