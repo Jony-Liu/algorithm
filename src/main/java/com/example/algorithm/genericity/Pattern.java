@@ -3,8 +3,10 @@ package com.example.algorithm.genericity;
 import java.util.ArrayList;
 import java.util.Collection;
 
-
-//范型方法
+/**
+ * @author Jony-Liu
+ * 范型方法
+ */
 public class Pattern {
 
     public static <T> void fun1(T[] a, int i) {
