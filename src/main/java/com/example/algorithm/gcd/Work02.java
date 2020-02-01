@@ -2,6 +2,9 @@ package com.example.algorithm.gcd;
 
 import java.util.Scanner;
 
+/**
+ * @author Jony-Liu
+ */
 public class Work02 {
     //greatest common divisor
     public static void main(String[] args) {
