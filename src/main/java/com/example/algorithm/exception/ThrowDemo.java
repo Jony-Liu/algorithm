@@ -1,5 +1,8 @@
 package com.example.algorithm.exception;
 
+/**
+ * @author Jony-Liu
+ */
 public class ThrowDemo {
     public static void main(String[] args) throws Exception {
         int a = 4;
