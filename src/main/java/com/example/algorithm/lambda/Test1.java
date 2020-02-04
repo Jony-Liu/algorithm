@@ -3,6 +3,9 @@ package com.example.algorithm.lambda;
 import java.util.Comparator;
 import java.util.function.Consumer;
 
+/**
+ * @author Jony-Liu
+ */
 public class Test1 {
     public static void main(String[] args) {
         Runnable runnable = new Runnable() {
