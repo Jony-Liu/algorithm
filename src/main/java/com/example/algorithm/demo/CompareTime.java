@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  */
 public class CompareTime {
 
