@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  */
 public class Editor {
 
