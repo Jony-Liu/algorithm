@@ -4,7 +4,7 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  */
 public class EnumerationTester {
 
