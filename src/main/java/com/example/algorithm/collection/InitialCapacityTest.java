@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Vector;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  * @date 2019-11-29
  */
 public class InitialCapacityTest {
