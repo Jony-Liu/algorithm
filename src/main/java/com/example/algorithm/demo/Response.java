@@ -6,7 +6,7 @@ import java.io.Serializable;
  * 响应封装类
  *
  * @param <T>
- * @author jonyliu
+ * @author Jony-Liu
  * @date 2019/12/31 10:52
  */
 public class Response<T> implements Serializable {
