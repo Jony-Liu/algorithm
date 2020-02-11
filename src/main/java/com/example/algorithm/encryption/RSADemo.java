@@ -9,7 +9,7 @@ import java.util.Base64;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  */
 public class RSADemo {
 
