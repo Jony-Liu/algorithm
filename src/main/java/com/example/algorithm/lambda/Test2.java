@@ -13,7 +13,7 @@ import java.util.function.Supplier;
 /**
  * Java8四大内置函数式接口
  *
- * @author jonyliu
+ * @author Jony-Liu
  */
 public class Test2 {
 
