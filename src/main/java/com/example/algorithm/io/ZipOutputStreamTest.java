@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  */
 public class ZipOutputStreamTest {
 
