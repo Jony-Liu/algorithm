@@ -1,7 +1,7 @@
 package com.example.algorithm.multithread.chapter01;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  * @date 2019/12/23 9:09
  */
 public class CountOperateTest {
