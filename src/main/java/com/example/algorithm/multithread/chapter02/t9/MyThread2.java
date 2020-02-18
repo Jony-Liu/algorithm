@@ -1,7 +1,7 @@
 package com.example.algorithm.multithread.chapter02.t9;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  * @date 2020/1/20 17:04
  */
 public class MyThread2  extends Thread{
