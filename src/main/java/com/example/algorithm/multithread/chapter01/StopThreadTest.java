@@ -1,7 +1,7 @@
 package com.example.algorithm.multithread.chapter01;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  * @date 2019/12/26 21:51
  */
 public class StopThreadTest {
