@@ -1,7 +1,7 @@
 package com.example.algorithm.multithread.chapter02.doubleSynBlockOneTwo;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  * @date 2020/1/20 15:23
  */
 public class ThreadA extends Thread{
