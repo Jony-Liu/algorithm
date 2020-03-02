@@ -1,7 +1,7 @@
 package com.example.algorithm.multithread.chapter02.synBlockString2;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  * @date 2020/1/20 17:27
  */
 public class Service {
