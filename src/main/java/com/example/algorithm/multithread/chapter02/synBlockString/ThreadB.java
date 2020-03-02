@@ -1,7 +1,7 @@
 package com.example.algorithm.multithread.chapter02.synBlockString;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  * @date 2020/1/20 17:33
  */
 public class ThreadB extends  Thread {
