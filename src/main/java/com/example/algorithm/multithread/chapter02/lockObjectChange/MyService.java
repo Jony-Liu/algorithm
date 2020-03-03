@@ -1,7 +1,5 @@
 package com.example.algorithm.multithread.chapter02.lockObjectChange;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 /**
  * @author Jony-Liu
  * @date: 2020/3/2 21:45
