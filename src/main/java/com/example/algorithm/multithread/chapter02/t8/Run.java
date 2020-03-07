@@ -1,7 +1,7 @@
 package com.example.algorithm.multithread.chapter02.t8;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  * @date 2020/1/20 15:56
  */
 public class Run {
