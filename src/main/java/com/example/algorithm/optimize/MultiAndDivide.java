@@ -3,7 +3,7 @@ package com.example.algorithm.optimize;
 import org.junit.Test;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  * @date 2019/12/13 9:11
  */
 public class MultiAndDivide {
