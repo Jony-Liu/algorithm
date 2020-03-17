@@ -1,7 +1,7 @@
 package com.example.algorithm.thread;
 
 /**
- * @author jonyliu
+ * @author Jony-Liu
  * @date 2019/12/20 9:59
  */
 public class Work3_04 {
