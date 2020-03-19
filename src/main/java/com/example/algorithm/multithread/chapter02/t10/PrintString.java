@@ -2,7 +2,7 @@ package com.example.algorithm.multithread.chapter02.t10;
 
 /**
  * @author Jony-Liu
- * @date: 2020/3/18 21:24
+ * @date 2020/3/18 21:24
  */
 public class PrintString implements Runnable {
 
