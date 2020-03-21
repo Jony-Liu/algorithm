@@ -2,7 +2,7 @@ package com.example.algorithm.multithread.chapter02;
 
 /**
  * @author Jony-Liu
- * @date: 2020/1/13 21:24
+ * @date 2020/1/13 21:24
  */
 public class TaskMethod2 extends Thread {
 

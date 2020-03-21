@@ -2,7 +2,7 @@ package com.example.algorithm.multithread.chapter02;
 
 /**
  * @author Jony-Liu
- * @date: 2020/1/13 21:16
+ * @date 2020/1/13 21:16
  */
 public class Task {
     public void doLongTimeTask(){
