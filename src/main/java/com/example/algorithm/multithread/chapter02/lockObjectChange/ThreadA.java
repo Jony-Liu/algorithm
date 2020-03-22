@@ -2,7 +2,7 @@ package com.example.algorithm.multithread.chapter02.lockObjectChange;
 
 /**
  * @author Jony-Liu
- * @date: 2020/3/2 21:54
+ * @date 2020/3/2 21:54
  */
 public class ThreadA extends Thread {
     private MyService myService;
