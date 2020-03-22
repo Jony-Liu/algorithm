@@ -2,7 +2,7 @@ package com.example.algorithm.multithread.chapter02;
 
 /**
  * @author Jony-Liu
- * @date: 2020/1/13 21:26
+ * @date 2020/1/13 21:26
  */
 public class TaskTest {
     public static void main(String[] args) {
