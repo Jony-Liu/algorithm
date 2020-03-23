@@ -2,7 +2,7 @@ package com.example.algorithm.multithread.chapter02.lockObjectChange;
 
 /**
  * @author Jony-Liu
- * @date: 2020/3/2 21:53
+ * @date 2020/3/2 21:53
  */
 public class Run1 {
     public static void main(String[] args) throws InterruptedException {

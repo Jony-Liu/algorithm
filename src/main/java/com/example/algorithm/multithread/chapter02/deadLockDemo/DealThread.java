@@ -2,7 +2,7 @@ package com.example.algorithm.multithread.chapter02.deadLockDemo;
 
 /**
  * @author Jony-Liu
- * @date: 2020/2/17 10:55
+ * @date 2020/2/17 10:55
  */
 public class DealThread implements Runnable {
     public String username;
