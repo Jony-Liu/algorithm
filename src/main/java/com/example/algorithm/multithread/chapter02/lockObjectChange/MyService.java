@@ -2,7 +2,7 @@ package com.example.algorithm.multithread.chapter02.lockObjectChange;
 
 /**
  * @author Jony-Liu
- * @date: 2020/3/2 21:45
+ * @date 2020/3/2 21:45
  */
 public class MyService {
     private String lock = "123";
