@@ -2,7 +2,7 @@ package com.example.algorithm.multithread.chapter02.staticSynMethod;
 
 /**
  * @author Jony-Liu
- * @date: 2020/2/17 10:12
+ * @date 2020/2/17 10:12
  */
 public class Run {
     public static void main(String[] args) {
