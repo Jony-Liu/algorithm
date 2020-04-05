@@ -5,6 +5,7 @@ package com.example.algorithm.designmode.singleton.enumsingleton;
  * @date 2019/8/29 17:05
  */
 public enum Singleton implements MySingleton {
+
     /**
      * 枚举类型字段
      */
@@ -18,4 +19,5 @@ public enum Singleton implements MySingleton {
     public static MySingleton getInstance() {
         return Singleton.INSTANCE;
     }
+
 }
