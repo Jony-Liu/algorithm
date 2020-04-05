@@ -10,8 +10,7 @@ public class SafeDoubleCheckedLocking {
 
     public static Instance getInstance() {
         if (null == instance) {
-            synchronized
-                    (SafeDoubleCheckedLocking.class) {
+            synchronized(SafeDoubleCheckedLocking.class) {
                 if (null == instance) {
                     instance = new Instance();
                     //instance为volatile，现在没有问题了。
