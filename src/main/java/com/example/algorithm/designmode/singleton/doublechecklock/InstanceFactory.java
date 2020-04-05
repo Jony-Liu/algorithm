@@ -13,4 +13,5 @@ public class InstanceFactory {
     public static Instance getInstance() {
         return InstanceHolder.instance;
     }
+
 }

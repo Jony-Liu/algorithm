@@ -21,6 +21,10 @@ public class MyService {
             System.out.println("打印了*");
             hasValue = true;
             condition.signal();
+            /**
+             * 多对多交替打印时，请使用
+             * condition.signalAll();
+             */
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -37,6 +41,10 @@ public class MyService {
             System.out.println("打印了#");
             hasValue = false;
             condition.signal();
+            /**
+             * 多对多交替打印时，请使用
+             * condition.signalAll();
+             */
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
