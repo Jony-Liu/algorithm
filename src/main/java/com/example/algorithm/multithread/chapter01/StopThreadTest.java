@@ -9,7 +9,7 @@ public class StopThreadTest {
         try{
             StopThreadDemo stopThreadDemo= new StopThreadDemo();
             stopThreadDemo.start();
-            Thread.sleep(2000);
+            Thread.sleep(200);
             stopThreadDemo.interrupt();
         }catch (InterruptedException e){
             System.out.println("main catch ");

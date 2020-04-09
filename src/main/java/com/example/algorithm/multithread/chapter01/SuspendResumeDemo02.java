@@ -5,12 +5,12 @@ package com.example.algorithm.multithread.chapter01;
  * @date 2019/12/30 9:35
  */
 public class SuspendResumeDemo02 {
-    synchronized public void printString(){
-        System.out.println("begin");
+     synchronized public void printString(){
+        System.out.println(Thread.currentThread().getName()+"begin");
         if("a".equals(Thread.currentThread().getName())){
             System.out.println("a线程永远suspend");
             Thread.currentThread().suspend();
         }
-        System.out.println("end");
+        System.out.println(Thread.currentThread().getName()+"end");
     }
 }

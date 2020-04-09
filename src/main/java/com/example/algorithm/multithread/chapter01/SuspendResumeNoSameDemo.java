@@ -12,6 +12,11 @@ public class SuspendResumeNoSameDemo {
         if(Thread.currentThread().getName().equals("a")){
             System.out.println("stop a thread");
             Thread.currentThread().suspend();
+//            try {
+//                Thread.sleep(5000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
         }
         this.password = password;
     }
