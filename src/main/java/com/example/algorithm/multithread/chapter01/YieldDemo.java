@@ -12,6 +12,7 @@ public class YieldDemo extends Thread{
         long beginTime = System.currentTimeMillis();
         int count = 0;
         for(int i=0;i<50000000;i++){
+            //放弃当前CPU资源，放弃时间不确定，可能刚放弃就活动CPU
             Thread.yield();
             count = count +(i++);
         }
