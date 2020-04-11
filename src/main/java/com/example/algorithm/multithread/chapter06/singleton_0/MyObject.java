@@ -15,9 +15,6 @@ public class MyObject {
     public static MyObject getInstance(){
         //此代码版本为立即加载
         //此版本代码的缺点是不能有其他实例变量
-        // TODO: 2020/4/5  以下描述待矫正
-        //因为getInstance()方法没有同步 待矫正
-        //所以有可能出现线程安全问题
         return myObject;
     }
 }
