@@ -9,10 +9,8 @@ import java.util.TimerTask;
  * @date 2020/4/5 0:19
  */
 public class MyTask extends TimerTask {
-
     @Override
     public void run() {
         System.out.println("任务执行了，时间为："+new Date());
     }
-
 }
