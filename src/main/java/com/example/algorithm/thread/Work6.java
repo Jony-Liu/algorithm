@@ -7,6 +7,7 @@ package com.example.algorithm.thread;
  *     线程名字  2
  *     线程名字  3
  *     线程名字  4
+ * @author Jony-Liu
  */
 class Print extends Thread{
     private static int num=1;
@@ -39,6 +40,10 @@ class Print extends Thread{
     }
 
 }
+
+/**
+ * @author Jony-Liu
+ */
 public class Work6 {
     public static void main(String[] args) {
         Print p1 = new Print("Thread-0",null);
