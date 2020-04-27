@@ -15,6 +15,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * @author Jony-Liu
+ */
 public class ReflectionUtil {
 
     static void copyProperties(Object source, Object target, Set properties, boolean included) {
