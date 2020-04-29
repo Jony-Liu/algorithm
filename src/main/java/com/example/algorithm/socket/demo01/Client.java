@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
 
+/**
+ * @author Jony-Liu
+ */
 public class Client {
     public static void main(String[] args) {
         Socket client = null;
