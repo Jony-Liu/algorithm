@@ -6,6 +6,7 @@ package com.example.algorithm.gc;
  * jmap -dump:format=b,file=heap.bin <pid>
  * jhat -J-Xmx512m heap.bin
  * http://localhost:7000
+ * @author Jony-Liu
  */
 public class GcTest {
     public static void main(String[] args) {
