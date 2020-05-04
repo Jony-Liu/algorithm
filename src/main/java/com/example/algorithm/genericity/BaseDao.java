@@ -4,6 +4,10 @@ package com.example.algorithm.genericity;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Jony-Liu
+ * @param <T>
+ */
 public class BaseDao<T> {
     private ArrayList<T> list = new ArrayList<>();
     public List<T> getData(){
