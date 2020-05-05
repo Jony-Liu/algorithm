@@ -1,6 +1,8 @@
 package com.example.algorithm.genericity;
 
-
+/**
+ * @author Jony-Liu
+ */
 public class Person {
     private String name;
     private int age;
