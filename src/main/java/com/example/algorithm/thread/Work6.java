@@ -8,7 +8,7 @@ package com.example.algorithm.thread;
  *     线程名字  3
  *     线程名字  4
  * @author Jony-Liu
- */
+class*/
 class Print extends Thread{
     private static int num=1;
     private Thread  t;
