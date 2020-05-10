@@ -38,6 +38,9 @@ class User implements Cloneable{
     }
 }
 
+/**
+ * @author Jony-Liu
+ */
 public class CloneTest {
     public static void main(String[] args)
             throws CloneNotSupportedException {
