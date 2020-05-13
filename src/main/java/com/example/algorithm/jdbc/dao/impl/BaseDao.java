@@ -5,6 +5,9 @@ import java.io.InputStream;
 import java.sql.*;
 import java.util.Properties;
 
+/**
+ * @author Jony-Liu
+ */
 public class BaseDao {
 
     Connection conn = null;
