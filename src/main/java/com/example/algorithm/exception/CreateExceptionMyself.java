@@ -17,7 +17,9 @@ class MyExcept extends Exception {
         return this.idnumber;
     }
 }
-
+/**
+ * @author Jony-Liu
+ */
 public class CreateExceptionMyself {
     public static void regist(int num) throws MyExcept {
         if (num < 0) {
