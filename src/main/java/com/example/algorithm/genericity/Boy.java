@@ -1,5 +1,7 @@
 package com.example.algorithm.genericity;
-
+/**
+ * @author Jony-Liu
+ */
 public class Boy extends Person {
 
     public Boy(String name, int age) {
