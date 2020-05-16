@@ -1,6 +1,8 @@
 package com.example.algorithm.designmode.singleton;
 
-
+/**
+ * @author Jony-Liu
+ */
 public class Singleton {
     //Eager Singleton
 	/*private static Singleton onlyone=new Singleton();
