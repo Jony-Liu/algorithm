@@ -1,5 +1,8 @@
 package com.example.algorithm.designmode.singleton;
 
+/**
+ * @author Jony-Liu
+ */
 public class SingletonTest {
 
     public static void main(String[] args) {
