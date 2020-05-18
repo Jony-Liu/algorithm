@@ -6,15 +6,15 @@ package com.example.algorithm.exception;
  */
 class MyExcept extends Exception {
     static final long serialVersionUID = 1L;
-    private int idnumber;
+    private int id;
 
     MyExcept(String message, int id) {
         super(message);
-        this.idnumber = id;
+        this.id = id;
     }
 
     public int getId() {
-        return this.idnumber;
+        return this.id;
     }
 }
 /**
