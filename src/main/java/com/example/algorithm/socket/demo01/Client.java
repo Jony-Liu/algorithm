@@ -20,9 +20,7 @@ public class Client {
             System.out.println("客户端准备传送");
             out.writeUTF("hello");
             System.out.println("客户端已经传送");
-
             //client.shutdownOutput();
-
             input = new DataInputStream(client.getInputStream());
             System.out.print("服务端：");
             System.out.println(input.readUTF());
