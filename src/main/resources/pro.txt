@@ -1,0 +1,2 @@
+className = com.example.algorithm.reflect.demo.property.Student
+methodName = show
