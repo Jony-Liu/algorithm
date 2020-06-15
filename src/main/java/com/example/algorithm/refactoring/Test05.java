@@ -7,7 +7,8 @@ package com.example.algorithm.refactoring;
 public class Test05 {
 
     public static void main(String[] args) {
-
+        GoodExample05 goodExample05 = new GoodExample05();
+        goodExample05.someMethod();
     }
 
 }
