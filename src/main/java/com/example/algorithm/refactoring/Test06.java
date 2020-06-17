@@ -5,6 +5,12 @@ package com.example.algorithm.refactoring;
  * @date 2020/6/16 22:04
  */
 public class Test06 {
+
+    public static void main(String[] args) {
+        GoodExample06 goodExample06 = new GoodExample06();
+        goodExample06.someMethod(new Data());
+    }
+
 }
 class BadExample06 {
 
