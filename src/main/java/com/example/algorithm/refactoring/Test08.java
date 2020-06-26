@@ -1,10 +1,17 @@
 package com.example.algorithm.refactoring;
 
+import java.util.Date;
+
 /**
  * @author Jony-Liu
  * @date 2020/6/24 22:35
  */
 public class Test08 {
+
+    public static void main(String[] args) {
+        GoodExample08 goodExample08 = new GoodExample08();
+        goodExample08.someMethod(new GoodExample08.Data(1,2,3));
+    }
 
 }
 class BadExample08 {
