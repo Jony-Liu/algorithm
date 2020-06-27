@@ -6,6 +6,15 @@ package com.example.algorithm.refactoring;
  */
 public class Test07 {
 
+    public static void main(String[] args) {
+
+        GoodExample07 goodExample07 = new GoodExample07();
+        goodExample07.someMethod1();
+        goodExample07.someMethod2();
+        goodExample07.someMethod3();
+
+    }
+
 
 }
 
