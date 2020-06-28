@@ -7,6 +7,10 @@ package com.example.algorithm.refactoring;
 public class Test07 {
 
     public static void main(String[] args) {
+        BadExample07 badExample07 = new BadExample07();
+        badExample07.someMethod1();
+        badExample07.someMethod2();
+        badExample07.someMethod3();
 
         GoodExample07 goodExample07 = new GoodExample07();
         goodExample07.someMethod1();
