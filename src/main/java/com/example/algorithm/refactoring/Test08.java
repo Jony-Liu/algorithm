@@ -9,6 +9,8 @@ import java.util.Date;
 public class Test08 {
 
     public static void main(String[] args) {
+        BadExample08 badExample08 = new BadExample08();
+        badExample08.someMethod(new BadExample08.Data(1,2,3));
         GoodExample08 goodExample08 = new GoodExample08();
         goodExample08.someMethod(new GoodExample08.Data(1,2,3));
     }
