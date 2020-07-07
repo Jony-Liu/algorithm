@@ -7,6 +7,8 @@ package com.example.algorithm.refactoring;
 public class Test03 {
 
     public static void main(String[] args) {
+        BadExample03 badExample03 = new BadExample03();
+        badExample03.someMethod(new Object(),new Object());
         GoodExample03 goodExample03 = new GoodExample03();
         goodExample03.someMethod(new Object(),new Object());
 
