@@ -50,6 +50,9 @@ class PrimeNum extends Thread {
     }
 }
 
+/**
+ * @author Jony-Liu
+ */
 public class Work4 {
 
     public static void main(String[] args) {
