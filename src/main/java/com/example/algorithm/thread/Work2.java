@@ -29,6 +29,9 @@ class SubThread extends Thread{
     }
 
 }
+/**
+ * @author Jony-Liu
+ */
 public class Work2 {
 
     public static void main(String[] args) {
