@@ -24,6 +24,9 @@ class Account implements Runnable {//Account 银行账户
 
 }
 
+/**
+ * @author Jony-Liu
+ */
 public class Work3 {
 
     public static void main(String[] args) {
