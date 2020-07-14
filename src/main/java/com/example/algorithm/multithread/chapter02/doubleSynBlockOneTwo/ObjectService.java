@@ -1,6 +1,8 @@
 package com.example.algorithm.multithread.chapter02.doubleSynBlockOneTwo;
 
-
+/**
+ * @author Jony-Liu
+ */
 public class ObjectService {
     public void serviceMethodA(){
         try{
