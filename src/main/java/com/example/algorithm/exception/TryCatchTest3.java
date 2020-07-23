@@ -5,6 +5,11 @@ package com.example.algorithm.exception;
  * @date 2020/6/1 21:39
  */
 public class TryCatchTest3 {
+
+    /**
+     * finally块执行在try块的return之前
+     * @return
+     */
     private static int total() {
         try {
             System.out.println("执行try");
@@ -17,4 +22,5 @@ public class TryCatchTest3 {
     public static void main(String[] args) {
         System.out.println("执行main：" + total());
     }
+
 }
