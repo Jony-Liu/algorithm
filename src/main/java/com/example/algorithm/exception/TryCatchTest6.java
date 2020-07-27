@@ -1,10 +1,12 @@
 package com.example.algorithm.exception;
 
 /**
+ * finally中含有返回值
  * @author Jony-Liu
  * @date 2020/6/3 21:09
  */
 public class TryCatchTest6 {
+
     private static int total() {
         try {
             System.out.println("执行try");
@@ -18,4 +20,5 @@ public class TryCatchTest6 {
     public static void main(String[] args) {
         System.out.println("执行main：" + total());
     }
+
 }
