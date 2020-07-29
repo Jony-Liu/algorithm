@@ -5,6 +5,7 @@ package com.example.algorithm.exception;
  * @date 2020/6/3 21:09
  */
 public class TryCatchTest7 {
+
     private static int total() {
         int i = 1;
         try {
@@ -20,4 +21,5 @@ public class TryCatchTest7 {
     public static void main(String[] args) {
         System.out.println("执行main：" + total());
     }
+
 }
