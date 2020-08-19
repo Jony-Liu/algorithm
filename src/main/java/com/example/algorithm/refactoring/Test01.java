@@ -3,6 +3,7 @@ package com.example.algorithm.refactoring;
 /**
  * @author Jony-Liu
  * @date 2020/6/7 17:53
+ * 重复代码的提炼
  */
 public class Test01 {
 
