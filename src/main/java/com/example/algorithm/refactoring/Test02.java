@@ -3,6 +3,7 @@ package com.example.algorithm.refactoring;
 /**
  * @author Jony-Liu
  * @date 2020/6/7 18:00
+ * 冗长方法的分割
  */
 public class Test02 {
     public static void main(String[] args) {
