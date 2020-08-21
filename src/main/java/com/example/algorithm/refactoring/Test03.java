@@ -3,6 +3,7 @@ package com.example.algorithm.refactoring;
 /**
  * @author Jony-Liu
  * @date 2020/6/9 21:54
+ * 嵌套条件分支的优化（1）
  */
 public class Test03 {
 
@@ -35,7 +36,11 @@ class BadExample03 {
 /* ---------------------分割线---------------------- */
 
 class GoodExample03 {
-
+    /**
+     * 将不满足某些条件的情况放在方法前面，并及时跳出方法，以免对后面的判断造成影响
+     * @param A
+     * @param B
+     */
     public void someMethod(Object A,Object B){
         if (A == null) {
             //code[2]
