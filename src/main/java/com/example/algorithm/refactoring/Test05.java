@@ -3,6 +3,7 @@ package com.example.algorithm.refactoring;
 /**
  * @author Jony-Liu
  * @date 2020/6/13 22:03
+ * 去掉一次性的临时变量
  */
 public class Test05 {
 
