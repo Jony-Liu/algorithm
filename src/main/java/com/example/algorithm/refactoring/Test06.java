@@ -3,6 +3,7 @@ package com.example.algorithm.refactoring;
 /**
  * @author Jony-Liu
  * @date 2020/6/16 22:04
+ * 消除过长参数列表
  */
 public class Test06 {
 
