@@ -5,6 +5,7 @@ import java.util.Date;
 /**
  * @author Jony-Liu
  * @date 2020/6/24 22:35
+ * 让类提供应该提供的方法
  */
 public class Test08 {
 

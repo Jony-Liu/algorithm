@@ -13,6 +13,7 @@ public class Test04 {
         goodExample04.someMethod(new Object(),new Object());
     }
 }
+
 class BadExample04 {
 
     public void someMethod(Object A,Object B){

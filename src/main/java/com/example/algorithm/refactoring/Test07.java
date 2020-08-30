@@ -3,6 +3,7 @@ package com.example.algorithm.refactoring;
 /**
  * @author Jony-Liu
  * @date 2020/6/18 22:10
+ * 提取类或继承体系中的常量
  */
 public class Test07 {
 
