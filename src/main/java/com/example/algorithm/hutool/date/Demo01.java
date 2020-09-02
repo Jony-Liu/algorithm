@@ -8,6 +8,7 @@ import java.util.Date;
 /**
  * @author Jony-Liu
  * @date 2020/9/1 22:28
+ * Date、long、Calendar之间的相互转换
  */
 public class Demo01 {
 
@@ -27,6 +28,7 @@ public class Demo01 {
         //当前日期字符串，格式：yyyy-MM-dd
         String today= DateUtil.today();
         System.out.println(today);
+
     }
 
 }
