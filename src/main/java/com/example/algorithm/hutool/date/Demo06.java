@@ -24,5 +24,18 @@ public class Demo06 {
 
         //常用偏移，结果：2017-03-01 19:33:23
         DateTime newDate3 = DateUtil.offsetHour(date, -3);
+
+        //昨天
+        DateUtil.yesterday();
+        //明天
+        DateUtil.tomorrow();
+        //上周
+        DateUtil.lastWeek();
+        //下周
+        DateUtil.nextWeek();
+        //上个月
+        DateUtil.lastMonth();
+        //下个月
+        DateUtil.nextMonth();
     }
 }
