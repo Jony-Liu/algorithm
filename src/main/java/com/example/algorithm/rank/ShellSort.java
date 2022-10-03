@@ -22,12 +22,19 @@ public class ShellSort {
                 }
                 System.out.println();
             }
+            // 打印每趟排序结果
+            System.out.println("----------------");
+            for (int m = 0; m <= array.length - 1; m++) {
+                System.out.print(array[m] + "\t");
+            }
+            System.out.println();
+            System.out.println("----------------");
         }
     }
 
     public static void main(String[] args) {
         ShellSort shellSort = new ShellSort();
-        int[] array = { 5, 69, 12, 3, 56, 789, 2, 5648, 23 };
+        int[] array = { 48, 37, 64, 96, 75, 12, 26, 48, 54,3 };
         shellSort.shellSort(array, array.length);
         for (int m = 0; m <= array.length - 1; m++) {
             System.out.print(array[m] + "\t");
