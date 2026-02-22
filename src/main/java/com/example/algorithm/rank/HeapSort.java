@@ -5,6 +5,8 @@ import java.util.Arrays;
 /**
  * 堆排序
  *
+ * 小根堆
+ *
  * @author jonyliu
  * @date 2022/9/29 16:38
  */
@@ -13,8 +15,8 @@ public class HeapSort {
     public static void myHeapSort(int[] arr) {
         int i;
         int len = arr.length;
-        for (i = len / 2 - 1; i >= 0; i--) {
-            adjustment(arr,i,len);
+        for (i = len / 2 - 1; i >= 0; i--) {//依次建堆
+            adjustment(arr,i,len);//以i为根节点，建立堆
         }
         for(i = len - 1;i>=0;i--){
             int tmp = arr[0];
@@ -42,6 +44,9 @@ public class HeapSort {
         int[] arr = {2, 6, 4, 8, 9, 5, 12, 55, 89, 45};
         System.out.println(Arrays.toString(arr));
         myHeapSort(arr);
+        System.out.println();
+        System.out.println("------------------------------");
+        System.out.println(Arrays.toString(arr));
     }
 
 }
